@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #480ca8;
+    height: 100vh;
+}
+
+header{
+    text-align: right;
+}
+
+header button{
+    width: auto;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #f72585;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.7; 
+    cursor: not-allowed;
+}
+
+.loading {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.loading label {
+    font-size: 24px;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: #f72585;
+}
+
+.solid {
+    background: #f72585;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.solid:hover {
+    background-color: #d61a6d;
+}
+
+.outline {
+    background: transparent;
+    color: #f72585;
+    border: 1px solid #f72585;
+}
+
+
+.error {
+    color: white;
+    background-color: #f72585;
+    display: none;
+    padding-left: 10px;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button.fab {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+button.fab.fixed {
+    position: fixed;
+}
+
+button.fab.bottom{
+    bottom: 32px;
+}
+
+button.fab.right{
+    right: 32px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button:disabled {
+    opacity: 0.7;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+
+input, button, select {
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+.outline.danger{
+    color: red;
+    border-color: red;
+}

@@ -1,0 +1,50 @@
+
+#msgLog{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #2f096b;
+}
+
+form{
+    width: 350px;
+    padding: 50px;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1.2px rgba(0, 0, 0, 0.301);
+}
+
+label{
+    font-size: 12.5px;
+    color: #2f096b;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.129) 1px
+}
+
+
+input:focus{
+    border-color: #2f096b;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+h1{
+    text-align: center;
+    color: #2f096b
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
